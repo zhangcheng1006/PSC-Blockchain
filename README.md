@@ -1,15 +1,15 @@
 # PSC-Blockchain
 
-This is the code repository of the PSC-Blockchain group.
+## Introduction
+The *Projet Collectif Scientif* of a group of students from Ecole Polytechnique, collaborating with a group of Orange.
 
-Group members:
+## Group Members:
+- Cheng ZHANG
+- Shiwen XIA
+- Nikolay IONANOV
+- Thibault La BATIDE-ALANORE
+- Zhihao PENG
 
-Nikolay IONANOV
 
-Thibault La BATIDE-ALANORE,
 
-Zhihao PENG,
 
-Shiwen XIA,
-
-Cheng ZHANG.
