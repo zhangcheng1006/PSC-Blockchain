@@ -2,7 +2,6 @@
 This is a project cooperated by a group of students from Ecole Polytechnique and a team of research from Orange.
 
 ## Introduction
-* * *
 This project is implemented with Golang, based on the plateform of HyperLedger/Fabric v0.6 and aims to facilitate the exchange of organs, kidney for example.
 
 We assume a scenario as follows: 
@@ -12,7 +11,6 @@ A patient named **R1** (reciever 1) is suffering from a failure of kidney. One o
 This project will provide a solution to this problem. All this kind of pairs (a donor and a reviever uncompatibly) whose information is recorded in our database will find another pair which is *cross-compatibly* with them. Here *cross-compatibly* means that **R1** is compatibly with **D2** and **R2** is compatibly with **D1**. So that we can establish a connection between these two pairs underline.
 
 ## Group Members
-* * *
 ### Group Members form Ecole Polytechnique
 - Cheng ZHANG
 - Shiwen XIA
@@ -21,7 +19,6 @@ This project will provide a solution to this problem. All this kind of pairs (a 
 - Zhihao PENG
 
 ## Implementation
-* * *
 The implementation of this chaincode is consist of 3 principal functions: **Init()**, **Invoke()** and **Query()**.
 
 - ### Init()
@@ -37,7 +34,6 @@ The implementation of this chaincode is consist of 3 principal functions: **Init
 
 
 ## Test
-* * *
 This project runs on the plateform of HyperLedger fabric v0.6. In order to test the performance of its functions, we need `vagrant` and `Oracle VirtualBox` to create virtual machines and simulate different nodes.
 On the host machine, in the first terminal:
 ```
@@ -159,7 +155,6 @@ Query Result: {"State":"active","CoupleID":"4","DonorHash":"c","RecieverHash":"d
 Clearly, user 1, 2 and 3 are marked as *matched* while user 4 stays *notmatched*.
 
 ### TODO
-* * *
 1. There is still a bug need to be fixed: When we try to query a user not exists or inactive, we don't get the waited error messsage "CoupleID not exist or inactive", but a "Error handling chaincode support stream: stream error".
 2. The **FindMatch** can just mark a user as matched rather than note which users are matched with this one. Maybe we need to create another table to stock all match pairs.
 
